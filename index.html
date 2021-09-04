@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPROCKET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a class="header_logo" href="index.html">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="btn_mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <li><a class="text_white paragraph_X_small text_highlight" href="#about">About</a></li>
+                <li><a class="text_white paragraph_X_small text_highlight" href="#services">Services</a></li>
+                <li><a class="text_white paragraph_X_small text_highlight" href="#testimonals">Testimonials</a></li>
+                <li><a class="text_white paragraph_X_small text_highlight" href="#faq">FAQ</a></li>
+                <li><a class="text_white paragraph_X_small text_highlight" href="#contacts">Contact us</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main_screen">
+            <div class="wrapper">
+                <div class="pos_wrapper">
+                    <h1 class="text_white">We provide high quality performance repair for UTV</h1>
+                    <button class="button bg_yellow">Book an appointment</button>
+                    <p class="paragraph_small text_white">Fill out the form and our manager will contact you</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="text_bg_wrapp  ">
+                <span class="text_bg text_gray_20 text_bg_90">ABOUT</span>
+            </div>
+            <div class="wrapper">
+                <div class="flex_container">
+                    <h2>About us</h2>
+                    <div class="pos_wrapper">
+                        <p class="paragraph_large">Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat
+                            commodo. Integer a viverra mauris. Fusce eu est enim. Orci varius natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        <div class="p_column_2 flex_container">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Integer a
+                                viverra mauris. Fusce eu est enim. Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci
+                                luctus et ultrices posuere cubilia curae; Fusce vehicula, erat eget dapibus accumsan,
+                                nisi nulla vestibulum est, ac rhoncus arcu leo eu mauris. Fusce eleifend lectus a odio
+                                pretium, non volutpat sapien tempor. </p>
+                            <p>Nunc vel est risus. Ut elementum, libero vestibulum feugiat mattis, quam tellus rutrum
+                                lacus, sit amet rhoncus justo metus ac dolor. Pellentesque ut tristique nunc. Aenean
+                                eget lorem ante. Fusce eu fringilla ex, nec lacinia nibh. Duis accumsan quis nunc dictum
+                                euismod. Sed blandit, ante in volutpat ultricies, nisi dui hendrerit justo, vel
+                                consequat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="gallery slider_auto_height swiper">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="images/gallery/1.png" alt="1">
+                            <img class="swiper-slide gallery_image_large" src="images/gallery/2.jpg" alt="2">
+                            <img class="swiper-slide" src="images/gallery/3.jpg" alt="3">
+                            <img class="swiper-slide gallery_image_large" src="images/gallery/2.jpg" alt="2">
+                        </div>
+                        <div class="swiper-navigation">
+                            <button class="swiper-button swiper-button-prev"></button>
+                            <button class="swiper-button swiper-button-next"></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="services" class="services bg_yellow">
+            <div class="text_bg_wrapp  ">
+                <span class="text_bg text_gray_20 text_bg_90">SERVICES</span>
+            </div>
+            <div class="wrapper">
+                <h2>Services and prices</h2>
+                <div class="pos_wrapper flex_container">
+                    <div class="services_price_list">
+                        <input id="engine_rebuilding_service" checked name="service_list" data-item="services_text_1" type="radio">
+                        <label for="engine_rebuilding_service">Engine rebuilding service</label>
+                        <input id="injector_servicing" name="service_list" data-item="services_text_2" type="radio">
+                        <label for="injector_servicing">Injector servicing</label>
+                        <input id="brake_caliper_servicing" name="service_list" data-item="services_text_3" type="radio">
+                        <label for="brake_caliper_servicing">Brake caliper  servicing</label>
+                        <input id="carburettor_servicing" name="service_list" data-item="services_text_4" type="radio">
+                        <label for="carburettor_servicing">Carburettor servicing</label>
+                        <input id="fork_servicing" name="service_list" data-item="services_text_5" type="radio">
+                        <label for="fork_servicing">Fork servicing</label>
+                    </div>
+                    <div class="services_price_text">
+                        <div id="services_text_1" style="display: block;">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit
+                                pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex.
+                                Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex. Vivamus sodales
+                                purus a turpis volutpat commodo.</p>
+                            <span class="services_price">$35</span>
+                            <img class="services_image" src="images/services/image_services_1.png" alt="service">
+                        </div>
+                        <div id="services_text_2">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit
+                                pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex.
+                                Vivamus sodales purus a </p>
+                            <span class="services_price">$45</span>
+                            <img class="services_image" src="images/services/image_services_1.png" alt="service">
+                        </div>
+                        <div id="services_text_3">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit
+                                pulvinar ex. .</p>
+                            <span class="services_price">$75</span>
+                            <img class="services_image" src="images/services/image_services_1.png" alt="service">
+                        </div>
+                        <div id="services_text_4">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit
+                                pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex.
+                                Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex.</p>
+                            <span class="services_price">$65</span>
+                            <img class="services_image" src="images/services/image_services_1.png" alt="service">
+                        </div>
+                        <div id="services_text_5">
+                            <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit
+                                pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex.
+                                Vivamus sodales purus a turpis volutpat commodo. Proin blandit pulvinar ex. Vivamus sodales
+                                purus a turpis volutpat commodo.</p>
+                            <span class="services_price">$45</span>
+                            <img class="services_image" src="images/services/image_services_1.png" alt="service">
+                        </div>
+                    </div>
+
+    
+                </div>
+            </div>
+        </section>
+        <section id="testimonals" class="testimonals">
+            <div class="text_bg_wrapp  ">
+                <span class="text_bg text_gray_20">TESTIMONIALS</span>
+            </div>
+            <div class="wrapper">
+                <h2 class="text_center">What our clients say about us</h2>
+                <div class="testimonals_list swiper-container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonal_item bg_gray_20">
+                            <h4>Very good service!</h4>
+                            <p>Jim has just completed a service, carburettor clean and fix on my aged blackbird. usual
+                                high standard having serviced my last four bikes from different manufacturers.</p>
+                            <span class="testimonal_name text_gray_50">Alex S.</span>
+                        </div>
+                        <div class="swiper-slide testimonal_item bg_gray_20">
+                            <h4>I was very pleased with the result!</h4>
+                            <p>Jim has just completed a service, carburettor clean and fix on my aged blackbird. usual
+                                high standard having serviced my last four bikes from different manufacturers.</p>
+                            <span class="testimonal_name text_gray_50">James E.</span>
+                        </div>
+                        <div class="swiper-slide testimonal_item bg_gray_20">
+                            <h4>After repair my bike is like new!</h4>
+                            <p>Jim has just completed a service, carburettor clean and fix on my aged blackbird. usual
+                                high standard having serviced my last four bikes from different manufacturers.</p>
+                            <span class="testimonal_name text_gray_50">Tony M.</span>
+                        </div>
+                        <div class="swiper-slide testimonal_item bg_gray_20">
+                            <h4>After repair my bike is like new!</h4>
+                            <p>Jim has just completed a service, carburettor clean and fix on my aged blackbird. usual
+                                high standard having serviced my last four bikes from different manufacturers.</p>
+                            <span class="testimonal_name text_gray_50">Tony M.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation swiper_navigation_bottom">
+                        <button class="swiper-button swiper-button-prev"></button>
+                        <button class="swiper-button swiper-button-next"></button>
+                    </div>
+                </div>
+                <div class="renovation_video">
+                    <button class="btn_play_video"><img src="images/play_triangle.svg" alt="triangle"></button>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq bg_gray_20">
+            <div class="text_bg_wrapp  ">
+                <span class="text_bg text_bg_90">QUESTIONS</span>
+            </div>
+            <div class="wrapper flex_container">
+                <div class="pos_wrapper faq_title_image">
+                    <h2>Frequently asked questions</h2>
+                    <img src="images/faq/1.png" alt="faq">
+                </div> 
+                <div class="pos_wrapper faq_block">
+                    <div class="sn-accordion-container">
+                        <div class="set_acc">
+                            <h3 class="title_acc h3_small">
+                                <span class="number_acc">01</span>
+                                <span>How often I need to change oil on my UTV?</span>
+                                <span class="plus"><i class="icon"></i></span>
+                            </h3>
+                            <div class="content_acc">
+                                <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Vivamus sit amet convallis tortor. Ut sed fringilla erat. Morbi interdum ornare diam, sed maximus ex porttitor eu. Mauris ut metus luctus, hendrerit velit at, consequat quam. Quisque id ultrices mi, nec venenatis mauris. Ut sed elit ornare, aliquam magna vitae, tempus mauris. Curabitur maximus auctor eros ut maximus. Pellentesque orci sapien, varius ut libero eget, sodales pharetra libero.</p>
+                            </div>
+                        </div>
+                        <div class="set_acc">
+                            <h3 class="title_acc h3_small">
+                                <span class="number_acc">02</span>
+                                <span>Why is my check engine light on?</span>
+                                <span class="plus"><i class="icon"></i></span>
+                            </h3>
+                            <div class="content_acc">
+                                <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Vivamus sit amet convallis tortor. Ut sed fringilla erat. Morbi interdum ornare diam, sed maximus ex porttitor eu. Mauris ut metus luctus, hendrerit velit at, consequat quam. Quisque id ultrices mi, nec venenatis mauris. Ut sed elit ornare, aliquam magna vitae, tempus mauris. Curabitur maximus auctor eros ut maximus. Pellentesque orci sapien, varius ut libero eget, sodales pharetra libero.</p>
+                            </div>
+                        </div>
+                        <div class="set_acc">
+                            <h3 class="title_acc h3_small">
+                                <span class="number_acc">03</span>
+                                <span>What maintenance should I be doing?</span>
+                                <span class="plus"><i class="icon"></i></span>
+                            </h3>
+                            <div class="content_acc">
+                                <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Vivamus sit amet convallis tortor. Ut sed fringilla erat. Morbi interdum ornare diam, sed maximus ex porttitor eu. Mauris ut metus luctus, hendrerit velit at, consequat quam. Quisque id ultrices mi, nec venenatis mauris. Ut sed elit ornare, aliquam magna vitae, tempus mauris. Curabitur maximus auctor eros ut maximus. Pellentesque orci sapien, varius ut libero eget, sodales pharetra libero.</p>
+                            </div>
+                        </div>
+                        <div class="set_acc">
+                            <h3 class="title_acc h3_small">
+                                <span class="number_acc">04</span>
+                                <span>What maintenance should I be doing?</span>
+                                <span class="plus"><i class="icon"></i></span>
+                            </h3>
+                            <div class="content_acc">
+                                <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Vivamus sit amet convallis tortor. Ut sed fringilla erat. Morbi interdum ornare diam, sed maximus ex porttitor eu. Mauris ut metus luctus, hendrerit velit at, consequat quam. Quisque id ultrices mi, nec venenatis mauris. Ut sed elit ornare, aliquam magna vitae, tempus mauris. Curabitur maximus auctor eros ut maximus. Pellentesque orci sapien, varius ut libero eget, sodales pharetra libero.</p>
+                            </div>
+                        </div>
+                        <div class="set_acc">
+                            <h3 class="title_acc h3_small">
+                                <span class="number_acc">05</span>
+                                <span>Why is my check engine light on?</span>
+                                <span class="plus"><i class="icon"></i></span>
+                            </h3>
+                            <div class="content_acc">
+                                <p>Proin blandit pulvinar ex. Vivamus sodales purus a turpis volutpat commodo. Vivamus sit amet convallis tortor. Ut sed fringilla erat. Morbi interdum ornare diam, sed maximus ex porttitor eu. Mauris ut metus luctus, hendrerit velit at, consequat quam. Quisque id ultrices mi, nec venenatis mauris. Ut sed elit ornare, aliquam magna vitae, tempus mauris. Curabitur maximus auctor eros ut maximus. Pellentesque orci sapien, varius ut libero eget, sodales pharetra libero.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="btn_view_all">View all</span>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer_top">
+                <form class="call_back">
+                    <h5>Request a call-back</h5>
+                    <input type="text" placeholder="Phone number">
+                    <button type="submit" class="button">Submit</button>
+                </form>
+                <div id="contacts" class="contacts">
+                    <div class="contact_hours">
+                        <h5>Opening hours</h5>
+                        <ul>
+                            <li>
+                                <span class="paragraph_middle">Mon-Fri</span>
+                                <span class="text_tab">.....................</span>
+                                <span class="paragraph_middle">10AM - 6PM</span>
+                            </li>
+                            <li>
+                                <span class="paragraph_middle">Sat</span>
+                                <span class="text_tab">........................</span>
+                                <span class="paragraph_middle">10AM - 4PM</span>
+                            </li>
+                            <li>
+                                <span class="paragraph_middle">Sun</span>
+                                <span class="text_tab">.....................</span>
+                                <span class="paragraph_middle">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact_adress">
+                        <h5>Address</h5>
+                        <span class="paragraph_middle">1735 E 16th Ave</span>
+                        <span class="paragraph_middle">Denver, CO 80218</span>
+                        <a href="#">view on google maps</a>
+                    </div>
+                    <div>
+                        <h5 class="footer_number">(303) 857-5797</h5>
+                        <a href="mailto:hey@sprocketdoc.com">hey@sprocketdoc.com</a>
+                        <div class="social_media">
+                            <a href="#"><img src="images/social/instagram.svg"></a>
+                            <a href="#"><img src="images/social/facebook.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="paragraph_middle copyright">© 2021, Sprocketdoc. All Right Reserved.</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
