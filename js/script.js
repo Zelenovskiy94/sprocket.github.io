@@ -55,3 +55,41 @@ $('.services_price_list input').on('click', function(){
     $('.services_price_text div').css('display', 'none')
     $('#'+item).css('display', 'block')
 })
+$(document).ready(function(){
+let lineBlock = document.querySelector('.grid_line')
+function createGridSvg(lineBlock, widthIntervar) {
+  let heightBody = $('body').height()
+  console.log(heightBody, $(document).outerHeight(true))
+  $('.grid_line').height(heightBody)
+  lineBlock.innerHTML = ''
+  let parent = lineBlock.parentNode
+  let width = parent.offsetWidth
+  let height = heightBody
+  let colorStroke = '#B7B4B4'
+  let widthStroke = '0.5';
+  for (let i = 0; i <= width; i += widthIntervar) {
+      let line1 = document.createElementNS("http://www.w3.org/2000/svg", 'line')
+      line1.setAttribute('x1', i)
+      line1.setAttribute('y1', 0)
+      line1.setAttribute('x2', i)
+      line1.setAttribute('y2', height)
+      line1.setAttribute('stroke', colorStroke)
+      line1.setAttribute('stroke-width', widthStroke)
+
+      lineBlock.appendChild(line1)
+  }
+}
+function resizeCreateGridSVG(){
+  setTimeout(function(){
+    if (window.innerWidth < 900) {
+      createGridSvg(lineBlock, 135)
+    } else {
+      createGridSvg(lineBlock, 244)
+    }
+  }, 400)
+
+}
+resizeCreateGridSVG()
+window.onresize = resizeCreateGridSVG
+
+})
