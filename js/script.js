@@ -55,6 +55,18 @@ $('.services_price_list input').on('click', function(){
     $('.services_price_text div').css('display', 'none')
     $('#'+item).css('display', 'block')
 })
+$('.btn_mobile_menu').on('click', function(){
+    $('.mobile_menu').addClass('active')
+    $('body').addClass('fixed')
+})
+$('.close_menu').on('click', function(){
+    $('.mobile_menu').removeClass('active')
+    $('body').removeClass('fixed')
+})
+$('.btn_view_all').on('click', function(){
+    $('.sn-accordion-container_hide').addClass('active')
+    $(this).css('display', 'none')
+})
 $(document).ready(function(){
 let lineBlock = document.querySelector('.grid_line')
 function createGridSvg(lineBlock, widthIntervar) {
@@ -66,7 +78,7 @@ function createGridSvg(lineBlock, widthIntervar) {
   let width = parent.offsetWidth
   let height = heightBody
   let colorStroke = '#B7B4B4'
-  let widthStroke = '0.5';
+  let widthStroke = '0.8';
   for (let i = 0; i <= width; i += widthIntervar) {
       let line1 = document.createElementNS("http://www.w3.org/2000/svg", 'line')
       line1.setAttribute('x1', i)
@@ -93,3 +105,19 @@ resizeCreateGridSVG()
 window.onresize = resizeCreateGridSVG
 
 })
+
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+    })
+})
+}
