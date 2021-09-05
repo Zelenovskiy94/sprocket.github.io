@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPROCKET</title>
+    <title>Front Range Sprocket Doc</title>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
         <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,11 +28,11 @@
                 <span></span>
             </div>
             <nav>
-                <li><a class="text_white paragraph_X_small text_highlight" href="#about">About</a></li>
-                <li><a class="text_white paragraph_X_small text_highlight" href="#services">Services</a></li>
-                <li><a class="text_white paragraph_X_small text_highlight" href="#testimonals">Testimonials</a></li>
-                <li><a class="text_white paragraph_X_small text_highlight" href="#faq">FAQ</a></li>
-                <li><a class="text_white paragraph_X_small text_highlight" href="#contacts">Contact us</a></li>
+                <li class="text_white"><a class=" paragraph_X_small text_highlight" href="#about">About</a></li>
+                <li class="text_white"><a class=" paragraph_X_small text_highlight" href="services.html">Services</a></li>
+                <li class="text_white"><a class=" paragraph_X_small text_highlight" href="#testimonals">Testimonials</a></li>
+                <li class="text_white"><a class=" paragraph_X_small text_highlight" href="#faq">FAQ</a></li>
+                <li class="text_white"><a class=" paragraph_X_small text_highlight" href="#contacts">Contact us</a></li>
             </nav>
             
         </div>
@@ -39,7 +40,7 @@
     </header>
     <div class="mobile_menu">
         <div class="mobile_menu--header">
-            <img src="images/logo_black.svg" alt="logo_black">
+            <img class="mobile_menu_logo" src="images/logo_black.svg" alt="logo_black">
             <img class="close_menu" src="images/close.svg" alt="close">
         </div>
         <nav>
@@ -55,8 +56,8 @@
             <div class="wrapper">
                 <div class="pos_wrapper">
                     <h1 class="text_white">We provide high quality performance repair for<br> UTV</h1>
-                    <!-- <button class="button bg_yellow">Book an appointment</button>
-                    <p class="paragraph_small text_white">Fill out the form and our manager will contact you</p> -->
+                    <button onclick="showModal('.modal_request')" class="button bg_yellow">Book an appointment</button>
+                    <p class="paragraph_small text_white">Fill out the form and our manager will contact you</p>
                 </div>
             </div>
         </section>
@@ -115,7 +116,7 @@
                         <label>Top End Rebuilds</label>
                         <label>Shock Service</label>
                         <label>Fork Service</label>
-                        <label>Carburetor / Fuel Injection  Service</label>
+                        <label>Carburetor / Fuel Injection Service</label>
                         <label>Brake Service</label>
                         <label>Tire Replacement</label>
                         <label>Bearing Service</label>
@@ -295,11 +296,11 @@
         <div class="wrapper">
             <div class="footer_top">
                 <div id="contacts" class="contacts">
-                    <!-- <form class="call_back footer_elem">
+                    <form class="call_back footer_elem">
                         <h5>Request a call-back</h5>
                         <input type="text" placeholder="Phone number">
-                        <button type="submit" class="button">Submit</button>
-                    </form> -->
+                        <button type="button" onclick="showModal('.modal_thanks')" class="button">Submit</button>
+                    </form>
                     <div class="contact_hours footer_elem">
                         <h5>Opening hours</h5>
                         <ul>
@@ -330,7 +331,7 @@
                         <h5 class="footer_number footer_elem">(303) 857-5797</h5>
                         <a href="mailto:hey@sprocketdoc.com">hey@sprocketdoc.com</a>
                         <div class="social_media">
-                            <a href="#"><img src="images/social/instagram.svg"></a>
+                            <a href="https://instagram.com/frsprocketdoc"><img src="images/social/instagram.svg"></a>
                             <a href="#"><img src="images/social/facebook.svg"></a>
                         </div>
                     </div>
@@ -340,8 +341,22 @@
         </div>
     </footer>
     <svg class="grid_line"></svg>
+    <div class="modal modal_request">
+        <h3 class="text_center">Request a call-back </h3>
+        <p class="paragraph_X_middle text_center">Fill out the form and our manager will contact you</p>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone number">
+            <button type="submit" class="button bg_yellow">send</button>
+        </form>
+    </div>
+    <div class="modal modal_thanks">
+        <h3 class="text_center">Thank you! Your message sent. We will contact you soon.</h3>
+        <button class="button bg_yellow">close</button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

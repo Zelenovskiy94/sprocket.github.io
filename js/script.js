@@ -121,3 +121,9 @@ anchor.addEventListener('click', function (e) {
     })
 })
 }
+
+
+function showModal(elem) {
+  $(elem).modal({
+  });
+}
